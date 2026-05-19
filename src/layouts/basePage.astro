@@ -1,5 +1,8 @@
 ---
-import MainPage from "../layouts/basePage.astro"
+import NavBar from "../components/nav_bar.astro"
+import Hero from "../components/hero.astro"
+import PageDivider from "../components/page_divider.astro"
+import Footer from "../components/footer.astro"
 ---
 
 <html lang="en">
@@ -12,7 +15,11 @@ import MainPage from "../layouts/basePage.astro"
 		<title>Astro</title>
 	</head>
 	<body>
-		<MainPage />
+        <NavBar />
+        <Hero />
+        <PageDivider />
+        <PageDivider />
+        <Footer />
 	</body>
 </html>
 

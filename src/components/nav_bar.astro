@@ -1,0 +1,58 @@
+---
+---
+
+<nav>
+    <div class="logo">
+        <img src="/src/assets/photos/logo.png" alt="Logo">
+    </div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#prices">Prices</a>
+    </div>
+    <div class="lang-btn">
+        <button>EN</button>
+        <button>ES</button>
+    </div>
+</nav>
+
+<style>
+    .logo img {
+        height: 40px;
+    }
+    nav {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        background: #fff;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        border-radius: 12px;
+        z-index: 1000;
+        border: 3px solid #000;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        margin: 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .lang-btn button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
