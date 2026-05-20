@@ -1,18 +1,44 @@
 ---
-import MainPage from "../layouts/basePage.astro"
+import "../styles/style.css"
+import BasePage from "../layouts/basePage.astro"
+import PageDivider from "../components/page_divider.astro"
+import Courses from "../components/courses.astro"
+import Hero from "../components/hero.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<MainPage />
-	</body>
-</html>
-
+<BasePage>
+		<Fragment slot="hero">
+	   	    <h1>Learn <span class="red">español</span> <br> by living it.</h1>
+	    	<p>Modern courses with experienced teachers</p>
+			<button class="start-button">Start now</button>				
+		</Fragment>
+		<Fragment slot="content">
+			<section class="about-school">
+				<div class="school-img">
+					<img src="/src/assets/photos/simbol_black.png" alt="OliOli"  height="300px">
+				</div>
+				<div class="about">
+					<h2>About Us</h2>
+					<p>something about school</p>
+				</div>
+			</section>
+			<PageDivider />
+			<section class="courses">
+				<div class="courses-text">
+					<h2>Our Courses</h2>
+					<p>something about courses</p>
+				</div>
+				<Courses />
+			</section>
+			<PageDivider />
+			<section class="teachers">
+				<h2>Our Teachers</h2>
+				<p>something about teachers</p>
+			</section>
+			<PageDivider />
+			<section class="sing-up">
+				<h2>Sign Up</h2>
+				<p>something about signing up</p>
+			</section>
+		</Fragment>
+</BasePage>

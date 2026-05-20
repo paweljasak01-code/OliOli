@@ -3,6 +3,7 @@ import NavBar from "../components/nav_bar.astro"
 import Hero from "../components/hero.astro"
 import PageDivider from "../components/page_divider.astro"
 import Footer from "../components/footer.astro"
+import "../styles/style.css"
 ---
 
 <html lang="en">
@@ -15,9 +16,14 @@ import Footer from "../components/footer.astro"
 		<title>Astro</title>
 	</head>
 	<body>
-        <NavBar />
-        <Hero />
+		<header>
+			<NavBar />
+				 <Hero>
+			    	<slot name="hero" slot="hero"/>
+				</Hero>
+		</header>
         <PageDivider />
+			<slot name="content" slot="content"/>
         <PageDivider />
         <Footer />
 	</body>

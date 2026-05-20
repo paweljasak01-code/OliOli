@@ -1,0 +1,111 @@
+---
+---
+<section class="courses-conteiner">
+    <div class="courses-card">
+        <img src="/src/assets/photos/beginer.jpg" alt="beginner">
+        <h2>Beginner</h2>
+        <p>something about beginner course</p>
+        <button class="see-more-btn">Ver más</button>
+    </div>
+    <div class="courses-card">
+        <img src="/src/assets/photos/intermediate.jpg" alt="intermediate">
+        <h2>Intermediate</h2>
+        <p>something about intermediate course</p>
+        <button class="see-more-btn">Ver más</button>
+    </div>
+    <div class="courses-card">
+        <img src="/src/assets/photos/advanced.jpg" alt="advanced">
+        <h2>Advanced</h2>
+        <p>something about advanced course</p>
+        <button class="see-more-btn">Ver más</button>
+    </div>
+    <div class="courses-card">
+        <img src="/src/assets/photos/conversation.jpg" alt="conversation">
+        <h2>Conversation</h2>
+        <p>something about conversation course</p>
+        <button class="see-more-btn">Ver más</button>
+    </div>  
+    <div class="courses-card">
+        <img src="/src/assets/photos/book.jpg" alt="grammar">
+        <h2>Grammar</h2>
+        <p>something about grammar course</p>
+        <button class="see-more-btn">Ver más</button>
+    </div>
+    <div class="courses-card">
+        <img src="/src/assets/photos/travel.jpg" alt="travel">
+        <h2>Travel</h2>
+        <p>something about travel course</p>
+        <button class="see-more-btn">Ver más</button>
+    </div>
+    <div class="courses-card">
+        <img src="/src/assets/photos/business.jpg" alt="business">
+        <h2>Business</h2>
+        <p>something about business course</p>
+        <button class="see-more-btn">Ver más</button>
+    </div>
+    <div class="courses-card">
+        <img src="/src/assets/photos/culturar.jpg" alt="culture">
+        <h2>Culture</h2>
+        <p>something about culture course</p>
+        <button class="see-more-btn">Ver más</button>
+    </div>
+</section>
+
+<style>
+.courses-conteiner {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1100px;
+}
+
+.courses-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    border: 3px solid #000;
+}
+.courses-card img {
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    display: block;
+}
+.courses-card h2 {
+    margin: 15px 0 10px;
+    padding: 0 15px;
+}
+.courses-card p {
+    margin: 5px 15px;
+    padding: 0 15px;
+}
+.see-more-btn {
+    margin: 15px 30px;
+    margin-top: auto;
+    background-color: #fff;
+    border: 3px solid #000;
+    color: #000;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 800;
+}
+
+.courses-card:nth-child(1) { background: rgba(255, 245, 112); }
+.courses-card:nth-child(2) { background: rgba(245, 173, 228); }
+.courses-card:nth-child(3) { background: rgba(171, 99, 73); }
+.courses-card:nth-child(4) { background: rgba(63, 105, 236); }
+.courses-card:nth-child(5) { background: rgba(243, 66, 44); }
+.courses-card:nth-child(6) { background: rgba(0, 147, 92); }
+.courses-card:nth-child(7) { background: rgba(255, 138, 79); }
+.courses-card:nth-child(8) { background: rgba(164, 90, 254); }
+</style>
