@@ -1,9 +1,9 @@
 ---
-import "../styles/style.css"
 import BasePage from "../layouts/basePage.astro"
 import PageDivider from "../components/page_divider.astro"
 import Courses from "../components/courses.astro"
 import Hero from "../components/hero.astro"
+import Teachers from "../components/teachers.astro"
 ---
 
 <BasePage>
@@ -13,32 +13,40 @@ import Hero from "../components/hero.astro"
 			<button class="start-button">Start now</button>				
 		</Fragment>
 		<Fragment slot="content">
-			<section class="about-school">
-				<div class="school-img">
-					<img src="/src/assets/photos/simbol_black.png" alt="OliOli"  height="300px">
-				</div>
-				<div class="about">
-					<h2>About Us</h2>
-					<p>something about school</p>
-				</div>
-			</section>
+				<section class="about-school">
+					<div class="school-img">
+						<img src="/src/assets/photos/simbol_black.png" alt="OliOli"  height="300px">
+					</div>
+					<div class="about">
+						<h2>About Us</h2>
+						<p>something about school</p>
+					</div>
+				</section>
 			<PageDivider />
-			<section class="courses">
-				<div class="courses-text">
-					<h2>Our Courses</h2>
-					<p>something about courses</p>
-				</div>
-				<Courses />
-			</section>
+				<section class="courses">
+					<div class="courses-text">
+						<h2>Our Courses</h2>
+						<p>something about courses</p>
+					</div>
+					<Courses />
+				</section>
 			<PageDivider />
-			<section class="teachers">
-				<h2>Our Teachers</h2>
-				<p>something about teachers</p>
-			</section>
+				<section class="why-us">
+						<h2	>WHY LEARN WITH OLIOLI?</h2>
+						<p>something about learning spanish</p>
+				</section>
 			<PageDivider />
-			<section class="sing-up">
-				<h2>Sign Up</h2>
-				<p>something about signing up</p>
-			</section>
+				<section class="teachers">
+					<div class="teachers-text">
+						<h2>Our Teachers</h2>
+						<p>something about teachers</p>
+					</div>
+				<Teachers />
+				</section>
+			<PageDivider />
+				<section class="sing-up">
+					<h2>Sign Up</h2>
+					<p>something about signing up</p>
+				</section>
 		</Fragment>
 </BasePage>

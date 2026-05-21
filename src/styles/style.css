@@ -21,23 +21,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 446px;
+    height: 500px;
 }
-
 section{
     padding: 40px;
     margin: 30px 0;
-}
-.about-school{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.courses-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .start-button {
     background-color: #fff570;
@@ -48,4 +36,12 @@ section{
     font-size: 16px;
     cursor: pointer;
     font-weight: 800;
+}
+.red{
+    color: rgba(243, 66, 44);
+    text-shadow: #000 1px 0 0, #000 -1px 0 0, #000 0 1px 0, #000 0 -1px 0;
+}
+.yellow{
+    color: #fff570;
+    text-shadow: #000 1px 0 0, #000 -1px 0 0, #000 0 1px 0, #000 0 -1px 0;
 }
