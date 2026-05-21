@@ -4,6 +4,7 @@ import PageDivider from "../components/page_divider.astro"
 import Courses from "../components/courses.astro"
 import Hero from "../components/hero.astro"
 import Teachers from "../components/teachers.astro"
+import Form from "../components/signup.astro"
 ---
 
 <BasePage>
@@ -15,11 +16,13 @@ import Teachers from "../components/teachers.astro"
 		<Fragment slot="content">
 				<section class="about-school">
 					<div class="school-img">
-						<img src="/src/assets/photos/simbol_black.png" alt="OliOli"  height="300px">
+						<img src="/src/assets/photos/simbol_black.png" alt="OliOli">
 					</div>
 					<div class="about">
-						<h2>About Us</h2>
-						<p>something about school</p>
+						<h2>About our language school</h2>
+						      <p><em>Oli</em> is how locals say hello in Valencia. Say it twice and you've got a conversation. That's exactly what we're about.</p>
+        				 	  <p>OliOli is a Spanish school in Valencia where professional teaching meets real Mediterranean life. Our teachers know their stuff, the community is genuinely warm, and what you learn in class actually makes sense the moment you step outside. The city is part of how we teach.</p>
+        					  <p>Because learning Spanish with us is not just about getting the grammar right. It is about feeling at home in a new language, in a new place. <em>¿Empezamos?</em></p>
 					</div>
 				</section>
 			<PageDivider />
@@ -32,7 +35,7 @@ import Teachers from "../components/teachers.astro"
 				</section>
 			<PageDivider />
 				<section class="why-us">
-						<h2	>WHY LEARN WITH OLIOLI?</h2>
+						<h2>WHY LEARN WITH OLIOLI?</h2>
 						<p>something about learning spanish</p>
 				</section>
 			<PageDivider />
@@ -44,9 +47,15 @@ import Teachers from "../components/teachers.astro"
 				<Teachers />
 				</section>
 			<PageDivider />
+			    <section class="why-spanish">
+						<h2>WHY LEARN SPANISH?</h2>
+						<p>something about learning spanish</p>
+				</section>
+			<PageDivider />
 				<section class="sing-up">
 					<h2>Sign Up</h2>
 					<p>something about signing up</p>
+					<Form />
 				</section>
 		</Fragment>
 </BasePage>

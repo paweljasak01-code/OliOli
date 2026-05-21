@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 10px;
 }
 .courses-text{
     display: flex;
@@ -14,4 +18,21 @@
     font-size: 48px;
     margin-bottom: 5px;
     margin-top: 50px;
+}
+.about{
+    text-align: left;
+}
+.about-school img{
+    width: 500px;
+    height: auto;
+    margin: 0;
+}
+
+.about p{
+    padding: 20px 0;
+    line-height: 1;
+    text-align: left;
+}
+.about-school, .courses, .why-us, .teachers, .why-spanish, .sing-up h2,p{
+    text-align: center;
 }
