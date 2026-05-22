@@ -2,49 +2,134 @@
 ---
 <section class="sing-up">
     <form action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name">
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Email">
-        <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Phone number">
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" placeholder="Address">
-        <label for="course">Select course</label>
-        <select name="" id=""></select>
-        <label for="startdate">Select start date:</label>
-        <input type="date" id="startdate" name="startdate"><br><br>
-        
-        <button type="submit">Sign Up</button>
+        <div class="form-grid">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="lastname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+            </div>
+
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="phone">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+            </div>
+
+            <div class="address">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Address">
+            </div>
+
+            <div class="course">
+                <label for="course">Select course</label>
+                <select name="course" id="course">
+                    <option value="" disabled selected hidden>select</option>
+                    <option value="">dsads</option>
+                    <option value="">dsawdd</option>
+                </select>
+            </div>
+            <div class="startdate">
+                <label for="startdate">Select start date:</label>
+                <input type="date" id="startdate" name="startdate">
+            </div>
+
+            <button type="submit">SIGN UP</button>
+        </div>
     </form>
 
 </section>
 
 <style>
-    form-card{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        max-width: 800px;
+    .sing-up{
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        margin: 0 auto;
+        max-width: 500px;
         background-color: #ffffff;
         border: 3px solid #000;
-        padding: 20px;
-        border-radius: 12px;
+        border-radius: 24px;
+        padding: 24px;
+    }
+    .form-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .name, .lastname, .email, .phone, .course, .startdate{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .address{
+        grid-column: 1 / -1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
     label{
         margin-top: 10px;
+        font-weight: 800;
     }
     input, select{
-        padding: 8px;
-        margin-top: 5px;
+        padding: 15px;
+        border: #000 3px solid;
+        border-radius: 20px;
+    }
+    input:focus {
+        outline: none;
+    }
+    #name:hover, #name:focus{
+        border-color: rgba(245, 173, 228);
+    }
+    #lastname:hover, #lastname:focus{
+        border-color: rgba(171, 99, 73);
+    }
+    #email:hover, #email:focus{
+        border-color: rgba(63, 105, 236); 
+    }
+    #phone:hover, #phone:focus{
+        border-color: rgba(243, 66, 44);
+    }
+    #address:hover, #address:focus{
+        border-color: rgba(0, 147, 92); 
+    }
+    #startdate:hover, #startdate:focus{
+        border-color: rgba(255, 138, 79);
+    }
+    #course:hover, #course:focus{
+        border-color: rgba(164, 90, 254);
     }
     button{
         margin-top: 20px;
-        padding: 10px;
-        background-color: #fff570;
-        border: none;
+        padding: 15px;
+        background-color: #ffffff;
+        border: #000 3px solid;
+        border-radius: 28px;
+        font-weight: 800;
         cursor: pointer;
+        width: 100%;
+        grid-column: 1 / -1;
+        width: 100%;
     }
+    button:hover{
+        background-color: #fff570;
+    }
+
+    { background: rgba(255, 245, 112); }
+.courses-card:nth-child(2) { background: }
+.courses-card:nth-child(3) { background: }
+.courses-card:nth-child(4) { background: }
+.courses-card:nth-child(5) { background:  }
+.courses-card:nth-child(6) { background:  }
+.courses-card:nth-child(7) { }
+.courses-card:nth-child(8) {  }
 </style>

@@ -28,6 +28,7 @@ section{
     margin: 20px 0;
 }
 .start-button {
+    margin-top: 10px;
     background-color: #fff570;
     border: 3px solid #000;
     color: #000;
