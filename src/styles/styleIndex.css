@@ -14,10 +14,9 @@
     align-items: center;
 }
 .hero-text{
-    margin-top: 100px;
+    margin: 10px 0;
     display: block;
     text-align: center;
-    gap: 10px;
 }
 .hero h1{
     text-shadow: 0 2px 20px #000;
@@ -34,12 +33,28 @@
     height: auto;
     margin: 0;
 }
-
 .about p{
     padding: 20px 0;
     line-height: 1;
     text-align: left;
 }
-.about-school, .courses, .why-us, .teachers, .why-spanish, .sing-up h2,p{
+.about-school, .courses, .teachers, .why-spanish, .sing-up h2,p{
     text-align: center;
+}
+.why-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 200px;
+    gap: 10px;
+}
+.why-us h2{
+    margin: 80px;
+    font-size: 60px;
+    text-align: left;
+    max-width: 450px;
+    float: left;
+
 }

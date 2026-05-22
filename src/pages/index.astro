@@ -11,11 +11,11 @@ import Form from "../components/signup.astro"
 		<Fragment slot="hero">
 			<section class="hero-text">
 	   	    	<h1>Learn <span class="red">español</span> <br> by living it.</h1>
-				<button class="start-button">Start now</button>			
+				<a class="start-button" href="#sign-up">Start now</a>			
 			</section>
 		</Fragment>
 		<Fragment slot="content">
-				<section class="about-school">
+				<section class="about-school" id="about">
 					<div class="school-img">
 						<img src="/src/assets/photos/simbol_black.png" alt="OliOli">
 					</div>
@@ -27,7 +27,7 @@ import Form from "../components/signup.astro"
 					</div>
 				</section>
 			<PageDivider />
-				<section class="courses">
+				<section class="courses" id="courses">
 					<div class="courses-text">
 						<h2>Our Courses</h2>
 						<p>something about courses</p>
@@ -36,11 +36,11 @@ import Form from "../components/signup.astro"
 				</section>
 			<PageDivider />
 				<section class="why-us">
-						<h2>WHY LEARN WITH OLIOLI?</h2>
+						<h2>WHY LEARN WITH <span class="yellow">OLIOLI?</span></h2>
 						<p>something about learning spanish</p>
 				</section>
 			<PageDivider />
-				<section class="teachers">
+				<section class="teachers" id="teachers">
 					<div class="teachers-text">
 						<h2>Our Teachers</h2>
 						<p>something about teachers</p>
@@ -53,7 +53,7 @@ import Form from "../components/signup.astro"
 						<p>something about learning spanish</p>
 				</section>
 			<PageDivider />
-				<section class="sing-up">
+				<section class="sing-up" id="sign-up">
 					<h2>Sign Up</h2>
 					<p>something about signing up</p>
 					<Form />
