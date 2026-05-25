@@ -1,12 +1,20 @@
 ---
 import BasePage from "./basePage.astro"
+import PageDivider from "../components/page_divider.astro"
 ---
-<Fragment slot="content">
-    <section class="course-description">
-        <slot name="description-slot" slot="description-slot"/>
-    </section>
-    <section class="about-course">
-        <slot name="about-course" slot="about-course">
-    </section>
-
-</Fragment>
+<BasePage>
+    <Fragment slot="hero">
+        <section class="hero-courses">
+            <slot name="hero-courses" />
+        </section>
+    </Fragment>
+    <Fragment slot="content">
+        <section class="course-description">
+            <slot name="course-description" />
+        </section>
+        <PageDivider />
+        <section class="about-course">
+            <slot name="about-course" />
+        </section>
+    </Fragment>
+</BasePage>

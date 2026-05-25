@@ -1,0 +1,13 @@
+
+.hero-text-courses{
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+}
+.hero-courses h1{
+    text-shadow: 0 2px 20px #000;
+    font-size: 48px;
+}
+.hero-text-courses h1, button{
+    padding: 30px ;
+}

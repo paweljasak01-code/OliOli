@@ -38,7 +38,7 @@
     line-height: 1;
     text-align: left;
 }
-.about-school, .courses, .teachers, .why-spanish, .sing-up h2,p{
+.about-school, .courses, .teachers, .sing-up h2,p{
     text-align: center;
 }
 .why-us{
@@ -56,5 +56,19 @@
     text-align: left;
     max-width: 450px;
     float: left;
+}
 
+.why-spanish{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin: 0 315px;
+    gap: 10px;
+}
+.why-spanish h2{
+    margin: 80px;
+    font-size: 60px;
+    text-align: right;
+    max-width: 450px;
 }

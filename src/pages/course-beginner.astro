@@ -1,0 +1,15 @@
+---
+import "../styles/styleCourses.css"
+import CoursePage from "../layouts/coursePage.astro";  
+import PageDivider from "../components/page_divider.astro"; 
+---
+<CoursePage>
+    <Fragment slot="hero-courses">
+            <section class="hero-text-courses">
+	   	    	<h1> <span class="red">Beginner</span> course</h1>
+				<a class="start-button" href="#sign-up">Start now</a>			
+			</section>
+    </Fragment>
+    <Fragment slot="course-description">
+    </Fragment>
+</CoursePage>
