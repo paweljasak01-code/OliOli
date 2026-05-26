@@ -1,5 +1,9 @@
-
+section{
+    padding: 200px;
+    margin: 90px;
+}
 .hero-text-courses{
+    padding: 20px;
     margin: 10px 0;
     display: block;
     text-align: center;
@@ -7,7 +11,84 @@
 .hero-courses h1{
     text-shadow: 0 2px 20px #000;
     font-size: 48px;
+    letter-spacing: 1   px;
 }
-.hero-text-courses h1, button{
+.hero-text-courses h1{
     padding: 30px ;
+}
+.hero-text-courses h5{
+    background-color: #ededed6f;
+    border-radius: 28px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.hero-courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+.what-will-you-learn{
+    text-align: center;
+}
+.what-will-you-learn h1{
+    margin: 20px;
+}
+.learning-cards{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1100px;
+}
+.card{
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    border: 3px solid #000;
+    transition: transform ease-out 0.3s;
+    letter-spacing: 1px;
+}
+.card:hover{
+    transform: translateY(-4px);
+}
+
+.card:nth-child(1) { background: rgba(255, 245, 112); }
+.card:nth-child(2) { background: rgba(245, 173, 228); }
+.card:nth-child(3) { background: rgba(171, 99, 73); }
+.card:nth-child(4) { background: rgba(63, 105, 236); }
+.card:nth-child(5) { background: rgba(243, 66, 44); }
+.card:nth-child(6) { background: rgba(0, 147, 92); }
+.card:nth-child(7) { background: rgba(255, 138, 79); }
+.card:nth-child(8) { background: rgba(164, 90, 254); }
+.card h3, .card p{
+    padding: 5px;
+}
+.card h3{
+    font-size: 18px;
+    padding: 10px auto;
+    margin-top: 10px;
+}
+.card p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.card .emoji{
+    font-weight: bolder;
+    font-size: 36px;
+    margin-top: 10px;
+}
+.about-course{
+    text-align: center;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
 }

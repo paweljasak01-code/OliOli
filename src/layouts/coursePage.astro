@@ -9,12 +9,6 @@ import PageDivider from "../components/page_divider.astro"
         </section>
     </Fragment>
     <Fragment slot="content">
-        <section class="course-description">
-            <slot name="course-description" />
-        </section>
-        <PageDivider />
-        <section class="about-course">
-            <slot name="about-course" />
-        </section>
+        <slot name="course-content" />
     </Fragment>
 </BasePage>

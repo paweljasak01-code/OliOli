@@ -4,6 +4,9 @@
 html {
 	scroll-behavior: smooth;
 }
+.emoji{
+    font-family: 'Noto emoji', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
