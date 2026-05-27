@@ -92,3 +92,6 @@ section{
     align-items: center;
     justify-content: center;
 }
+.about-course p{
+    margin: 30px;
+}

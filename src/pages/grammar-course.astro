@@ -1,0 +1,70 @@
+---
+import "../styles/styleCourses.css"
+import CoursePage from "../layouts/coursePage.astro";
+import PageDivider from "../components/page_divider.astro";
+import Signup from "../components/signup.astro";
+---
+<CoursePage>
+    <Fragment slot="hero-courses">
+            <section class="hero-text-courses">
+	   	    	<h1> <span class="red">Grammar</span> course</h1>
+                <h5><span class="emoji">🎯</span>A1-B1  | <span class="emoji">🗓 </span> 1-4 weeks  | <span class="emoji">👥</span>  4-10  | <span class="emoji">💶</span> 150€/month</h5>	
+			</section>
+
+				<a class="start-button" href="#sign-up">Start now</a>		
+    </Fragment>
+    <Fragment slot="course-content">
+        <section class="what-will-you-learn">
+            <h1>WHAT ARE YOU GOING TO LEARN</h1>
+            <section class="learning-cards">
+                <div class="card">
+                    <span class="emoji">👋</span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat </p>
+                </div>
+            <div class="card">
+                    <span class="emoji">🔢</span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat </p>
+            </div>
+            <div class="card">
+                    <span class="emoji">📝</span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat </p>
+            </div>
+            <div class="card">
+                    <span class="emoji">🏠</span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat </p>
+            </div>
+            <div class="card">
+                    <span class="emoji">🛒</span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat </p>
+            </div>
+            <div class="card">
+                    <span class="emoji">🗺</span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat </p>
+            </div>
+            <div class="card">
+                    <span class="emoji">🔊</span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat, narum, eveniet atque repellendus magnam tenetur doloremque eligendi. </p>
+            </div>
+            <div class="card">
+                    <span class="emoji">💬</span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat</p>
+            </div>
+        </section>
+        </section>
+        <PageDivider />
+        <section class="about-course">
+            <h2>ABOUT THIS COURSE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur quisquam deleniti illo placeat cupiditate mollitia, earum, error expedita asperiores repudiandae cum assumenda exercitationem ipsum hic laudantium. Numquam adipisci officiis dicta!</p>
+        </section>
+        <PageDivider />
+        <Signup />
+    </Fragment>
+</CoursePage>

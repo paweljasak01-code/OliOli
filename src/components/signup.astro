@@ -30,13 +30,27 @@
                 <label for="course">Select course</label>
                 <select name="course" id="course">
                     <option value="" disabled selected hidden>select</option>
-                    <option value="">dsads</option>
-                    <option value="">dsawdd</option>
+                    <option value="">Beginner</option>
+                    <option value="">Intermediate</option>
+                    <option value="">Advanced</option>
+                    <option value="">Grammar</option>
+                    <option value="">Conversation</option>
+                    <option value="">Travel</option>
+                    <option value="">Culture</option>
                 </select>
             </div>
             <div class="startdate">
                 <label for="startdate">Select start date:</label>
                 <input type="date" id="startdate" name="startdate">
+            </div>
+
+            <div class="address">
+                <label for="duration">Duration:</label>
+                <select name="duration" id="duration">
+                    <option value="" disabled selected hidden>select</option>
+                    <option value="">1 week</option>
+                    <option value="">2 weeks</option>
+                </select>
             </div>
 
             <button type="submit">SIGN UP</button>
@@ -108,7 +122,10 @@
     #course:hover, #course:focus{
         border-color: rgba(164, 90, 254);
     }
-    button{
+    #duration:hover, #duration:focus{
+        border-color: #fff570;
+    }
+        button{
         margin-top: 20px;
         padding: 15px;
         background-color: #ffffff;

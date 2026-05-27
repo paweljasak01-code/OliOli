@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@700&display=swap');
 
+@media screen and (max-width: 480px){
+    
+}
+
 html {
 	scroll-behavior: smooth;
 }
