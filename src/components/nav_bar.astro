@@ -18,65 +18,78 @@
 </nav>
 
 <style>
-    .logo img {
-        height: 40px;
-    }
-    nav {
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 85%;
-        background: #fff;
-        color: #000;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 30px;
-        border-radius: 12px;
-        z-index: 1000;
-        border: 3px solid #000;
-    }
+.logo img {
+  height: 3rem;
+  width: auto;
+}
+nav {
+  position: fixed;
+  top: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 0.75rem;
+  z-index: 1000;
+  border: 0.1875rem solid #000;
+}
+.nav-links {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  font-weight: 800;
+}
+.nav-links a {
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.nav-links a:nth-child(1):hover {
+  color: rgba(243, 67, 44, 0.8);
+  text-shadow: 0 0 0.3125rem rgba(243, 66, 44);
+}
+.nav-links a:nth-child(2):hover {
+  color: rgba(0, 147, 92, 0.8);
+  text-shadow: 0 0 0.3125rem rgba(0, 147, 92);
+}
+.nav-links a:nth-child(3):hover {
+  color: rgba(255, 138, 79, 0.8);
+  text-shadow: 0 0 0.3125rem rgba(255, 138, 79);
+}
+.nav-links a:nth-child(4):hover {
+  color: rgba(164, 90, 254, 0.8);
+  text-shadow: 0 0 0.3125rem rgba(164, 90, 254);
+}
+.lang-btn button {
+  margin-left: 0.625rem;
+  padding: 0.625rem 0.9375rem;
+  cursor: pointer;
+  border: 0.1875rem solid #000;
+  border-radius: 0.625rem;
+  background-color: #fff;
+}
+.lang-btn button:hover {
+  background-color: #fff570;
+  font-weight: 800;
+}
 
-    .nav-links {
-        display: flex;
-        gap: 5%;
-        justify-content: center;
-        font-weight: 800;
-    }
-
-    .nav-links a {
-        margin: 0;
-        cursor: pointer;
-        text-decoration: none;
-        color: inherit;
-    }
-    .nav-links a:nth-child(1):hover{
-        color: rgba(243, 67, 44, 0.8);
-        text-shadow: 0 0 5px rgba(243, 66, 44);
-    }
-        .nav-links a:nth-child(2):hover{
-        color: rgba(0, 147, 92, 0.8); ;
-        text-shadow: 0 0 5px rgba(0, 147, 92); ;
-    }
-        .nav-links a:nth-child(3):hover{
-        color: rgba(255, 138, 79, 0.8);;
-        text-shadow: 0 0 5px rgba(255, 138, 79);;
-    }
-        .nav-links a:nth-child(4):hover{
-        color: rgba(164, 90, 254, 0.8);
-        text-shadow: 0 0 5px rgba(164, 90, 254);
-    }
-    .lang-btn button {
-        margin-left: 10px;
-        padding: 10px 15px;
-        cursor: pointer;
-        border: 3px solid #000;
-        border-radius: 10px;
-        background-color: #fff;
-    }
-    .lang-btn button:hover {
-        background-color: #fff570;
-        font-weight: 800;
-    }
+@media (max-width: 640px){
+  nav{
+    width: 90%;
+    justify-content: center;
+    padding: 0.9375rem 1rem;
+  }
+  img, .lang-btn{
+    display: none;
+  }
+  .nav-links{
+    text-align: center;
+  }
+}
 </style>

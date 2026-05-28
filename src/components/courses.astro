@@ -56,59 +56,56 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
     justify-content: center;
     align-items: stretch;
-    max-width: 1100px;
+    max-width: 68.75rem;
 }
-
 .courses-card {
-    margin: 10px 0;
+    margin: 0.625rem 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
     color: #000;
-    border-radius: 30px;
-    padding-bottom: 15px;
+    border-radius: 1.875rem;
+    padding-bottom: 0.9375rem;
     overflow: hidden;
-    border: 3px solid #000;
+    border: 0.1875rem solid #000;
     transition: transform ease-out 0.3s;
 }
-.courses-card:hover{
-    transform: translateY(-8px);
+.courses-card:hover {
+    transform: translateY(-0.5rem);
 }
 .courses-card img {
     width: 100%;
-    height: 134px;
+    height: 8.375rem;
     object-fit: cover;
     display: block;
 }
 .courses-card h2 {
-    margin: 15px 0 10px;
-    padding: 0 10px;
+    margin: 0.9375rem 0 0.625rem;
+    padding: 0 0.625rem;
 }
 .courses-card p {
-    margin: 5px 15px;
-    padding: 0 10px;
+    margin: 0.3125rem 0.9375rem;
+    padding: 0 0.625rem;
 }
 .courses-card a {
     text-decoration: none;
 }
 .see-more-btn {
-    margin: 15px 30px;
-    margin-top: 10px;
+    margin: 0.9375rem 1.875rem;
+    margin-top: auto;
     background-color: #fff;
-    border: 3px solid #000;
+    border: 0.1875rem solid #000;
     color: #000;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 0.625rem;
+    border-radius: 1.25rem;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 800;
 }
-
-
 .courses-card:nth-child(1) { background: rgba(255, 245, 112); }
 .courses-card:nth-child(2) { background: rgba(245, 173, 228); }
 .courses-card:nth-child(3) { background: rgba(171, 99, 73); }
@@ -117,4 +114,12 @@
 .courses-card:nth-child(6) { background: rgba(0, 147, 92); }
 .courses-card:nth-child(7) { background: rgba(255, 138, 79); }
 .courses-card:nth-child(8) { background: rgba(164, 90, 254); }
+@media (max-width: 700px){
+    .courses-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  p{
+    display: none;
+  }
+}
 </style>

@@ -72,3 +72,16 @@
     text-align: right;
     max-width: 450px;
 }
+
+@media (max-width: 640px){
+
+    .about-school{
+        flex-direction: column;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .why-us h2{
+        font-size: 28px;
+        margin: 20px;
+    }
+}
